@@ -67,7 +67,7 @@ docker run -p 3000:3000 -e JWT_SECRET=$(openssl rand -hex 32) commerce-api
 - Payment gateway, email verification, and password reset are not part of this project.
 - `node:sqlite` is still "experimental" in Node. In production, use `better-sqlite3` or PostgreSQL.
 
-## Challenges / next steps
+## Challenges / next steps ##
 
 1. Move to PostgreSQL (`pg` plus `SELECT ... FOR UPDATE`, or the same conditional update).
 2. Redis rate limiter and a refresh token blacklist.
