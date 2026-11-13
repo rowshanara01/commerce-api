@@ -3,7 +3,7 @@
 The core skeleton of almost every software company's backend: **Auth + RBAC + CRUD + Orders (transactions) + security**.
 E-commerce, booking, SaaS, fintech: the same pattern shows up everywhere.
 
-## How to run (Node 22.13+)
+## How to run (Node 22.13+) ##
 
 ```bash
 npm install
