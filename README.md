@@ -25,7 +25,7 @@ docker build -t commerce-api .
 docker run -p 3000:3000 -e JWT_SECRET=$(openssl rand -hex 32) commerce-api
 ```
 
-## Endpoints
+## Endpoints ##
 
 | Method | Path | Access |
 |---|---|---|
