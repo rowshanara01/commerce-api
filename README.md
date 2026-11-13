@@ -60,7 +60,7 @@ docker run -p 3000:3000 -e JWT_SECRET=$(openssl rand -hex 32) commerce-api
 - Structured JSON logs with a request id (`X-Request-Id`), a consistent error format, and `/health` (includes a DB check).
 - Graceful shutdown (SIGTERM), a multi-stage non-root Dockerfile with a healthcheck, and CI (typecheck + test + audit).
 
-## Limitations (honest notes)
+## Limitations (honest notes) ##
 
 - The rate limiter is in-memory. Running more than one server needs Redis.
 - SQLite is fine for a single server. At larger scale, use PostgreSQL (mostly the same SQL, and the transaction concepts are identical).
