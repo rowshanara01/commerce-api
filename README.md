@@ -1,4 +1,4 @@
-# commerce-api: Production-Style Backend (Node.js + TypeScript + Express) #
+##### commerce-api: Production-Style Backend (Node.js + TypeScript + Express) #####
 
 The core skeleton of almost every software company's backend: **Auth + RBAC + CRUD + Orders (transactions) + security**.
 E-commerce, booking, SaaS, fintech: the same pattern shows up everywhere.
@@ -22,7 +22,7 @@ Docker:
 
 ```bash
 docker build -t commerce-api .
-docker run -p 3000:3000 -e JWT_SECRET=$(openssl rand -hex 32) commerce-api
+docker run -p 3000:3000 -e JWT_SECRET=$(openssl rand -hex 32) commerce-api .
 ```
 
 ## Endpoints ##
