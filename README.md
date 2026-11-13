@@ -56,7 +56,7 @@ docker run -p 3000:3000 -e JWT_SECRET=$(openssl rand -hex 32) commerce-api
 - **Order state machine:** placed -> paid -> shipped. Cancelling returns stock, and a double cancel is safe.
 - **Soft delete** and **price snapshot** (changing a product's price later doesn't change old orders).
 
-### Operability
+### Operability ###
 - Structured JSON logs with a request id (`X-Request-Id`), a consistent error format, and `/health` (includes a DB check).
 - Graceful shutdown (SIGTERM), a multi-stage non-root Dockerfile with a healthcheck, and CI (typecheck + test + audit).
 
