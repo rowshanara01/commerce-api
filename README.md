@@ -1,4 +1,4 @@
-# commerce-api: Production-Style Backend (Node.js + TypeScript + Express)
+# commerce-api: Production-Style Backend (Node.js + TypeScript + Express) #
 
 The core skeleton of almost every software company's backend: **Auth + RBAC + CRUD + Orders (transactions) + security**.
 E-commerce, booking, SaaS, fintech: the same pattern shows up everywhere.
