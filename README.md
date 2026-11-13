@@ -49,7 +49,7 @@ docker run -p 3000:3000 -e JWT_SECRET=$(openssl rand -hex 32) commerce-api
 - **Rate limiting:** global, plus login brute-force protection (per IP + email), with a `Retry-After` header.
 - helmet, request body size limit, SQL injection protection (parameterized queries, sort whitelist, LIKE escaping), and the app refuses to boot in production with a weak `JWT_SECRET`.
 
-### Data correctness
+### Data correctness ##
 - Money is stored as **integer cents** (never floats), with a DB-level `CHECK (stock >= 0)` and versioned migrations.
 - An order is **a single transaction** (atomic). Stock is decremented with an atomic conditional update, so **overselling can't happen**: 20 parallel orders against a stock of 5 produce exactly 5 successes.
 - **Idempotency-Key:** a network retry never creates a duplicate order or a duplicate charge.
