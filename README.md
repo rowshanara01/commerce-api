@@ -42,7 +42,7 @@ docker run -p 3000:3000 -e JWT_SECRET=$(openssl rand -hex 32) commerce-api .
 
 ## What's included (what companies look for) ##
 
-### Auth & Security
+### Auth & Security  ####
 - **Passwords:** bcrypt. **Tokens:** JWT access token (15 min) plus a refresh token (only the hash is stored in the DB), with **rotation and reuse detection**.
 - JWT algorithm is pinned (blocks the `alg:none` attack). User enumeration and timing attacks are closed. Mass assignment is closed (a role can't be set at registration).
 - **RBAC** (customer / admin) and **IDOR protection** (someone else's order returns 404).
